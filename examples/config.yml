@@ -3,6 +3,10 @@ modules:
   default:
     headers:
       X-Dummy: my-test-header
+#    http_client_config:
+#      authorization:
+#        type: Bearer
+#        credentials: {BEARER_TOKEN_GOES_HERE}
     metrics:
     - name: example_global_value
       path: '{ .counter }'
